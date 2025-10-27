@@ -8,14 +8,14 @@ Programa que modela uma classe para o controle dos robôs utilizados nas aulas.
 /* Definir as portas onde serão ligados o controle dos motores 
 e a leitura do sensor de ultrasom
 */
-#define PORT_M1_1
-#define PORT_M1_2
-#define PORT_M2_1
-#define PORT_M2_2
-#define PORT_VEL_M1
-#define PORT_VEL_M2
-#define PORT_TRIGGER
-#define PORT_ECHO
+#define PORT_M1_1       2
+#define PORT_M1_2       3  
+#define PORT_M2_1       4
+#define PORT_M2_2       5
+#define PORT_VEL_M1     6
+#define PORT_VEL_M2     7
+#define PORT_TRIGGER    8
+#define PORT_ECHO       9
 
 
 class Robo {
@@ -140,14 +140,7 @@ Robo robo;
 
 void setup() 
 {  
-  robo.setup(PORT_M1_1, 
-             PORT_M1_2, 
-             PORT_M2_1, 
-             PORT_M2_2, 
-             PORT_VEL_M1, 
-             PORT_VEL_M2,
-             PORT_TRIGGER,
-             PORT_ECHO);
+  robo.setup(PORT_M1_1, PORT_M1_2, PORT_M2_1, PORT_M2_2, PORT_VEL_M1, PORT_VEL_M2, PORT_TRIGGER, PORT_ECHO);
 
 }
 
